@@ -1,0 +1,19 @@
+<div class="collection_filter">
+    <form id="collection_filter" method="get" action="{{ current_uri }}?">
+        {{ taxonomies_field }}
+        <fieldset>
+            <legend>{{ title }}</legend>
+            {{ taxonomy from="{{ handle }}" }}
+            {{ if total_results }}
+            <div>
+                <input class="filter_item" id="{{ handle }}_{{ slug }}" name="{{ handle }}[]" value="{{ slug }}" type="checkbox"
+                       {{ if current_full_url | contains(handle) && current_full_url | contains(slug) }} checked="checked" {{ /if }}
+                />
+                <label for="{{ handle }}_{{ slug }}">{{ title }}</label>
+            </div>
+            {{ /if }}
+            {{ /taxonomy }}
+        </fieldset>
+        {{ /taxonomies_field }}
+    </form>
+</div>

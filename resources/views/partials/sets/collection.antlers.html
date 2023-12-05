@@ -1,0 +1,14 @@
+{{ collections_field }}
+<div class="collection_list">
+    {{ collection_query collection="{{ handle }}" logic="or" }}
+        {{ if total_results }}
+            <a href="{{ slug }}" class="item">
+                <h3>{{ title }}</h3>
+                <div>
+                    {{ content | truncate(90, '...') }}
+                </div>
+            </a>
+        {{ /if total_results }}
+    {{ /collection_query }}
+</div>
+{{ /collections_field }}

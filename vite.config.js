@@ -2,6 +2,12 @@ import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 
 export default defineConfig({
+    server: {
+        hmr:{
+            host: process.env.DDEV_HOSTNAME,
+            protocol : 'wss'
+        }
+    },
     plugins: [
         laravel({
             input: [

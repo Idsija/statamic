@@ -1,0 +1,41 @@
+@import "variables";
+@import "typography";
+@import "partials/header";
+
+
+body{
+    margin: 0;
+}
+
+.row{
+    padding: 3em 1.5em;
+    max-width: 126.6rem;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    gap: 1.5em;
+    > div{
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+.cols{
+    padding: 3em 1.5em;
+    max-width: 126.6rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: flex-start;
+    gap: 1.5em;
+    .col{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1.5em;
+        > div{
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+}

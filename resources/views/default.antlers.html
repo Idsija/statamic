@@ -1,1 +1,14 @@
-{{ content }}
+<section>
+    <div class="cols">
+        <div class="col aside">
+            {{ aside_bard_field }}
+            {{ partial src="sets/{type}" }}
+            {{ /aside_bard_field }}
+        </div>
+        <div class="col main">
+            {{ bard_field }}
+            {{ partial src="sets/{type}" }}
+            {{ /bard_field }}
+        </div>
+    </div>
+</section>
