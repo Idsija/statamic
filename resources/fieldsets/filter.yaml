@@ -1,0 +1,14 @@
+title: Filter
+fields:
+  -
+    handle: taxonomies_field
+    field:
+      mode: default
+      type: taxonomies
+      display: 'Taxonomies Field'
+      icon: taxonomy
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

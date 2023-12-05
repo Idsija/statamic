@@ -1,0 +1,15 @@
+title: Collection
+fields:
+  -
+    handle: collections_field
+    field:
+      mode: default
+      type: collections
+      display: 'Collections Field'
+      icon: collections
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      max_items: 1

@@ -1,0 +1,22 @@
+title: Code
+fields:
+  -
+    handle: code_field
+    field:
+      theme: material
+      mode: php
+      mode_selectable: false
+      indent_type: tabs
+      indent_size: 4
+      key_map: default
+      line_numbers: true
+      line_wrapping: true
+      antlers: false
+      type: code
+      display: 'Code Field'
+      icon: code
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
