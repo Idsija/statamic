@@ -1,0 +1,176 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: bard_field
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+              smart_typography: false
+              save_html: false
+              inline: false
+              toolbar_mode: fixed
+              reading_time: false
+              word_count: false
+              fullscreen: true
+              allow_source: true
+              enable_input_rules: true
+              enable_paste_rules: true
+              remove_empty_nodes: false
+              antlers: false
+              link_noopener: false
+              link_noreferrer: false
+              target_blank: false
+              sets:
+                fieldsets:
+                  display: Fieldsets
+                  instructions: null
+                  icon: null
+                  sets:
+                    collection:
+                      display: collection
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          import: collection
+                    filter:
+                      display: Filter
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          import: filter
+                    code:
+                      display: Code
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          import: code
+              always_show_set_button: false
+              collapse: false
+              previews: true
+              type: bard
+              display: 'Bard Field'
+              icon: bard
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+  aside:
+    display: Aside
+    sections:
+      -
+        display: 'New Section'
+        fields:
+          -
+            handle: aside_bard_field
+            field:
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - removeformat
+                - quote
+                - anchor
+                - image
+                - table
+              smart_typography: false
+              save_html: false
+              inline: false
+              toolbar_mode: fixed
+              reading_time: false
+              word_count: false
+              fullscreen: true
+              allow_source: true
+              enable_input_rules: true
+              enable_paste_rules: true
+              remove_empty_nodes: false
+              antlers: false
+              link_noopener: false
+              link_noreferrer: false
+              target_blank: false
+              always_show_set_button: false
+              collapse: false
+              previews: true
+              type: bard
+              display: 'Bard Field'
+              icon: bard
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              sets:
+                collection:
+                  display: Collection
+                  instructions: null
+                  icon: null
+                  sets:
+                    new_set:
+                      display: 'New Set'
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          import: collection
+                    filter:
+                      display: Filter
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          import: filter
+                    code:
+                      display: Code
+                      instructions: null
+                      icon: null
+                      fields:
+                        -
+                          import: code
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+title: Page
